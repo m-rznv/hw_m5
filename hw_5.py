@@ -45,9 +45,7 @@ async def main(days, currency):
     urls = []
     for i in range(days):
         date_request = datetime.datetime.now() - datetime.timedelta(days=i)
-        print(date_request)
         date_request = date_request.strftime('%d.%m.%Y')
-        print(date_request)
         url = f'https://api.privatbank.ua/p24api/exchange_rates?date={date_request}'
         if request(url):
             urls.append(request(url))
