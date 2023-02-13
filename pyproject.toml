@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hw-m5"
+version = "0.1.0"
+description = ""
+authors = ["mx_so <108818234+m-rznv@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "hw_m5"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+faker = "^16.8.1"
+aiohttp = "^3.8.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
